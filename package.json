@@ -1,0 +1,53 @@
+{
+  "name": "nodevms",
+  "version": "1.0.0",
+  "description": "vatech soft",
+  "main": "./dist/www.js",
+  "scripts": {
+    "test": "node dist/www.js",
+    "build": "npx tsc && npx ts-node copyStaticAssets.ts",
+    "serve:ts": "npx ts",
+    "install": "npm i && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Ericple/NodeVMS.git"
+  },
+  "keywords": [
+    "virtual-airline"
+  ],
+  "author": "Guo Tingjin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ericple/NodeVMS/issues"
+  },
+  "homepage": "https://github.com/Ericple/NodeVMS#readme",
+  "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/compression": "^1.7.2",
+    "@types/errorhandler": "^1.5.0",
+    "@types/express": "^4.17.14",
+    "@types/express-session": "^1.17.5",
+    "@types/node": "^18.7.18",
+    "@types/nodemailer": "^6.4.6",
+    "@types/shelljs": "^0.8.11",
+    "bootstrap-icons": "^1.9.1",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.2",
+    "errorhandler": "^1.5.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "http": "^0.0.1-security",
+    "mongodb": "^4.10.0",
+    "nodemailer": "^6.7.8",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "scss": "^0.2.4",
+    "shelljs": "^0.8.5",
+    "typescript": "^4.8.3",
+    "url": "^0.11.0",
+    "winston": "^3.8.2"
+  }
+}
