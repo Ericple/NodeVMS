@@ -4,8 +4,8 @@
   "description": "vatech soft",
   "main": "./dist/www.js",
   "scripts": {
-    "test": "node dist/www.js",
-    "build": "npx tsc && npx ts-node copyStaticAssets.ts",
+    "start": "nodemon dist/www.js",
+    "build": "npx tsc && npx ts-node copyStaticAssets.ts && npm run start",
     "serve:ts": "npx ts",
     "install": "npm i && npm run build"
   },
@@ -28,6 +28,7 @@
     "@types/errorhandler": "^1.5.0",
     "@types/express": "^4.17.14",
     "@types/express-session": "^1.17.5",
+    "@types/jquery": "^3.5.14",
     "@types/node": "^18.7.18",
     "@types/nodemailer": "^6.4.6",
     "@types/shelljs": "^0.8.11",
@@ -40,6 +41,7 @@
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "http": "^0.0.1-security",
+    "jquery": "^3.6.1",
     "mongodb": "^4.10.0",
     "nodemailer": "^6.7.8",
     "path": "^0.12.7",

@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    include partials/header
+    .container.text-center(style="max-width=300px")
+        h3.mt-3 国内气象查询
+        .alert.alert-danger.mt-2(role="alert" style="display:none;" id="alert")
+            p API错误
+        .form-floating
+            input.form-control.mt-3.mb-3(type="text", name="icao" id="floatingInput")
+            label(for="floatingInput") ICAO Code
+        .VAPTCHAContainer(style="width:100%;height:36px;" id="VAPTCHAContainer")
+            .VAPTCHA-init-loading.mb-3
+                a(href="/" target="_blank")
+                    svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="60px" viewBox="0 0 24 30" style="enable-background: new 0 0 50 50; width: 14px; height: 14px; vertical-align: middle" xml:space="preserve") 
+                        rect(x="0" y="9.22656" width="4" height="12.5469" fill="#CCCCCC")
+                            animate(attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite")
+                            animate(attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite")
+                        rect(x="10" y="5.22656" width="4" height="20.5469" fill="#CCCCCC")
+                            animate(attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite")
+                            animate(attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite")
+                        rect(x="20" y="8.77344" width="4" height="13.4531" fill="#CCCCCC")
+                            animate(attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite")
+                            animate(attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite")
+                span.VAPTCHA-text VAPTCHA Initializing...
+        //- button.w-100.btn.btn-lg.btn-primary(id="search") 查询
+        link(rel="stylesheet", href="./css/vaptcha.css")
+        .script1
+            script(src="https://v-cn.vaptcha.com/v3.js") 
+        .script2
+            script(src="./js/weather.js") 
+            

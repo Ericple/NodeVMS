@@ -5,11 +5,11 @@ import bodyParser from "body-parser";
 import path from "path";
 import MongoStore from "connect-mongo";
 import { MONGODB_URI, SESSION_SECRET } from "./util/secrets";
-import { MONGODB_DB_NAME } from "./util/configuration";
-//API
-import { WEATHER_QUERY } from "./api/weather";
-import { MailAPI } from "./api/airmail";
-import { userAPI } from "./api/user";
+import { MONGODB_DB } from "./util/configuration";
+//EXPRESS ROUTER
+import { WEATHER_PAGE } from "./router/weather";
+import { APIs } from "./api";
+import { HOME_PAGE } from "./router/home";
 //SETUP EXPRESS SERVER
 const app = express();
 
@@ -27,7 +27,7 @@ app.use(session({
     secret: SESSION_SECRET,
     store: new MongoStore({
         mongoUrl:MONGODB_URI,
-        dbName:MONGODB_DB_NAME.MAIN
+        dbName:MONGODB_DB.MAIN
     })
 }))
 app.use(
@@ -35,12 +35,10 @@ app.use(
 );
 
 //EXPRESS API INTEGRATION
-app.use('/weather', WEATHER_QUERY);
-app.use('/mail', MailAPI);
-app.use('/user', userAPI);
+app.use('/api', APIs);
 
-app.get('/', (req,res) => {
-    res.render("home")
-})
+//EXPRESS ROUTERS INTEGRATION
+app.use('/', HOME_PAGE)
+app.use('/weather', WEATHER_PAGE);
 
 export default app;

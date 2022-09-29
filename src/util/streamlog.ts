@@ -1,12 +1,12 @@
 //IMPORT STATEMENT
 import { MongoClient } from 'mongodb';
 import { MONGODB_URI } from './secrets';
-import { MONGODB_DB_NAME } from './configuration';
+import { MONGODB_DB } from './configuration';
 
 //CONSTANT STATEMENT
 const mongoConnect = new MongoClient(MONGODB_URI);
-const database = mongoConnect.db(MONGODB_DB_NAME.MAIN);
-const logDB = database.collection(MONGODB_DB_NAME.LOG);
+const database = mongoConnect.db(MONGODB_DB.MAIN);
+const logDB = database.collection(MONGODB_DB.LOG);
 const date = new Date();
 
 //FUNCTION STATEMENT

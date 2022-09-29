@@ -3,18 +3,17 @@ import express from 'express';
 import { Encryptor } from '../util/encrypt';
 import { MongoClient } from 'mongodb';
 import { MONGODB_URI } from '../util/secrets';
-import { MONGODB_DB_NAME, SITE_CONFIG } from '../util/configuration';
+import { MONGODB_DB, SITE_CONFIG } from '../util/configuration';
 import { SendSiteMail } from '../util/sitemail';
 import WriteLog from '../util/streamlog';
 import { ResEnd } from '../util/resEnder';
 import { createSession } from '../util/session';
 import url from 'url';
-
 //CONSTANT DECLARATION
 const router = express.Router();
 const mongoConnect = new MongoClient(MONGODB_URI);
-const database = mongoConnect.db(MONGODB_DB_NAME.MAIN);
-const userDB = database.collection(MONGODB_DB_NAME.ACCOUNT);
+const database = mongoConnect.db(MONGODB_DB.MAIN);
+const userDB = database.collection(MONGODB_DB.ACCOUNT);
 const encryptor = new Encryptor();
 
 //MAIN
