@@ -1,5 +1,3 @@
-# NodeVMS
-VATECH Software
----
-NodeVMS is an open source virtual airline manage system based on node.js and express
----
+# NodeVMS<sup>1</sup>
+[![Build](https://github.com/Ericple/NodeVMS/workflows/Build/badge.svg?branch=main)]
+
