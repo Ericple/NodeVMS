@@ -59,3 +59,13 @@ export function DELETE_AIRMAIL(id:string | string[], res:any) {
     
     ResEnd(true,"Mail Deleted",res);
 }
+
+export function GET_AIRMAIL(identity:string, res:any) {
+    AIRMAIL_DB.find({$or:[
+        {"_sender": identity},
+        {"_receiver": identity}
+    ]}).toArray((error,result) => {
+        if (error) throw error;
+        res.send(JSON.stringify(result));
+    })
+}
