@@ -7,9 +7,9 @@ export const SITE_CONFIG = {
 //Edit to your SMTP server AUTH
 export const MAIL_CONFIG = {
     AUTH: {
-        host: "smtp.xxxxxxx.com",
-        user: "site@xxxxx.xx",
-        pass: "xxxxxxxxxxxxxxxxx"
+        host: "smtp.mxhichina.com",
+        user: "site@peercat.cn",
+        pass: "hsf(&398gT(#*g4h-2"
     },
     OPTIONS: {
         secure: false,
