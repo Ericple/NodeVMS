@@ -1,3 +1,3 @@
 # NodeVMS<sup>1</sup>
-![liscence](https://img.shields.io/github/license/Ericple/NodeVMS?style=flat-square) ![release](https://img.shields.io/github/v/release/Ericple/NodeVMS?style=flat-square)
+![Liscence](https://img.shields.io/github/license/Ericple/NodeVMS?style=flat-square) ![Release](https://img.shields.io/github/v/release/Ericple/NodeVMS?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/Ericple/NodeVMS?style=flat-square)
 
