@@ -1,5 +1,5 @@
 # NodeVMS<sup>1</sup>
-![Liscence](https://img.shields.io/github/license/Ericple/NodeVMS?style=flat-square) ![Release](https://img.shields.io/github/v/release/Ericple/NodeVMS?style=flat-square&logo=github) ![GitHub issues](https://img.shields.io/github/issues/Ericple/NodeVMS?style=flat-square&logo=github) ![Database](https://img.shields.io/badge/database-MongoDB-blue?style=flat-square&logo=mongodb)
+![Liscence](https://img.shields.io/github/license/Ericple/NodeVMS?style=flat-square&logo=github) ![Release](https://img.shields.io/github/v/release/Ericple/NodeVMS?style=flat-square&logo=github) ![GitHub issues](https://img.shields.io/github/issues/Ericple/NodeVMS?style=flat-square&logo=github) ![Database](https://img.shields.io/badge/database-MongoDB-blue?style=flat-square&logo=mongodb) ![author](https://img.shields.io/badge/NodeVMS-Ericple|Peercat-blue?style=flat-square)
 
 A new VAM system build on the Node.js framework.
 Work in progress. Documentations and installation
