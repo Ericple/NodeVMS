@@ -1,5 +1,4 @@
 # NodeVMS<sup>1</sup>
-<<<<<<< HEAD
 ![Liscence](https://img.shields.io/github/license/Ericple/NodeVMS?style=flat-square) ![Release](https://img.shields.io/github/v/release/Ericple/NodeVMS?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/Ericple/NodeVMS?style=flat-square) ![Database](https://img.shields.io/badge/database-MongoDB-blue)
 
 A new VAM system build on the Node.js framework.
@@ -34,7 +33,3 @@ npm run build
 ---
 You can develop plugins for nodevms using JavaScript, there will be 
 a chart showing all the API available once the beta release is out.
-=======
-![Liscence](https://img.shields.io/github/license/Ericple/NodeVMS?style=flat-square) ![Release](https://img.shields.io/github/v/release/Ericple/NodeVMS?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/Ericple/NodeVMS?style=flat-square)
-
->>>>>>> 158232cd60cbc25ac04b69c3ee91ad44dfc46004
