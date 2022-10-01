@@ -29,7 +29,7 @@ npm run build
 
 - MongoDB Community Server 6.0.2 or higher
 
-## Plugin Development
+## Extend
 ---
 You can develop plugins for nodevms using JavaScript, there will be 
 a chart showing all the API available once the beta release is out.
