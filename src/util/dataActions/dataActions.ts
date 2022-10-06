@@ -1,7 +1,8 @@
 import { MONGODB_DB } from "../configuration";
 import { MongoClient } from "mongodb";
-import DATATYPES from "../../types/global";
+import IDATATYPES from "../../types/global";
 import { ResEnd } from "../resEnder";
+import WriteLog from "../streamlog";
 
 const date = new Date();
 const MONGO_CONNECT = new MongoClient(MONGODB_DB.CONNECT_STRING);
@@ -10,14 +11,8 @@ const AIRMAIL_DB = MAIN_DB.collection(MONGODB_DB.AIRMAIL);
 const ACCOUNT_DB = MAIN_DB.collection(MONGODB_DB.ACCOUNT);
 const AIRCRAFT_DB = MAIN_DB.collection(MONGODB_DB.AIRCRAFT);
 
-let airMail:DATATYPES.MAIL;
-
-//邮件发送
-export function SEND_AIRMAIL(sender:string, receiver:string | string[], subject:string, content:string, res:any) {
-    airMail._sender = sender;
-    airMail._receiver = receiver;
-    airMail._subject = subject;
-    airMail._content = content;
+//AIRMAIL ACTION
+export async function NEW_AIRMAIL(airMail:IDATATYPES.IAIRMAIL, res?:any) {
     airMail._date = date.toLocaleDateString()+" "+date.toLocaleTimeString();
     if (typeof airMail._receiver === 'object') {
         const _receiverCount = airMail._receiver.length
@@ -29,10 +24,16 @@ export function SEND_AIRMAIL(sender:string, receiver:string | string[], subject:
                 _subject: airMail._subject,
                 _content: airMail._content
             }).catch((reason) => {
-                ResEnd(false,"error",res);
+                if(res) {
+                    ResEnd(false,reason,res);
+                }
+                console.log("error"+reason);
             })
         }
-        ResEnd(true,"Mail sent",res);
+        if(res) {
+            ResEnd(true,"Mail sent",res);
+        }
+        WriteLog("Mail Sent");
     } else {
         AIRMAIL_DB.insertOne({
             _sender: airMail._sender,
@@ -41,14 +42,21 @@ export function SEND_AIRMAIL(sender:string, receiver:string | string[], subject:
             _subject: airMail._subject,
             _content: airMail._content
         }).catch((reason)=>{
-            ResEnd(false,reason,res);
+            if(res) {
+                ResEnd(false,reason,res);
+            }
+            console.log("error"+reason);
         }).then(() => {
-            ResEnd(true,"Mail sent",res);
+            if(res) {
+                ResEnd(true,"Mail sent",res);
+            }
+            console.log("Mail Sent at "+airMail._date);
+            WriteLog("Mail Sent");
         })
     }
 }
 
-export function DELETE_AIRMAIL(id:string | string[], res:any) {
+export function DELETE_AIRMAIL(id:string | string[], res?:any) {
     if (typeof id === 'object') {
         for (const objId in id) {
             AIRMAIL_DB.deleteOne({"_objectId": objId});
@@ -57,7 +65,10 @@ export function DELETE_AIRMAIL(id:string | string[], res:any) {
         AIRMAIL_DB.deleteOne({"_objectId": id});
     }
     
-    ResEnd(true,"Mail Deleted",res);
+    if(res) {
+        ResEnd(true,"Mail Deleted",res);
+    }
+    WriteLog("Mail deleted ["+id+"]");
 }
 
 export function GET_AIRMAIL(identity:string, res:any) {
@@ -69,3 +80,28 @@ export function GET_AIRMAIL(identity:string, res:any) {
         res.send(JSON.stringify(result));
     })
 }
+
+//ACCOUNT ACTION
+export function NEW_ACCOUNT() {}
+
+export function DELETE_ACCOUNT() {}
+
+export function GET_ACCOUNT() {}
+
+export function PATCH_ACCOUNT() {}
+
+//AIRCRAFT ACTION
+export function NEW_AIRCRAFT() {}
+
+export function DELETE_AIRCRAFT() {}
+
+export function GET_AIRCRAFT() {}
+
+export function PATCH_AIRCRAFT() {}
+
+//PIERP ACTION
+export function NEW_PIERP() {}
+
+export function DELETE_PIERP() {}
+
+export function GET_PIERP() {}

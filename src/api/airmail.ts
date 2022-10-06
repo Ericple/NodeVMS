@@ -1,6 +1,7 @@
 //IMPORT STATEMENT
 import express from 'express';
-import { DELETE_AIRMAIL, GET_AIRMAIL, SEND_AIRMAIL } from "../util/dataActions/dataActions";
+import WriteLog, { ActionLog } from '../util/streamlog';
+import { DELETE_AIRMAIL, GET_AIRMAIL, NEW_AIRMAIL } from "../util/dataActions/dataActions";
 
 //CONSTANT DECLARATION
 const router = express.Router();
@@ -13,16 +14,21 @@ router.get('/', (req, res) => {
         req.body["identity"], 
         res
     );
+    ActionLog("GET_AIRMAIL",req.ip);
 })
 
 router.post('/', (req, res) => {
-    SEND_AIRMAIL(
-        req.body["sender"], 
-        req.body["receiver"], 
-        req.body["subject"], 
-        req.body["content"], 
+    NEW_AIRMAIL(
+        {
+            _sender:req.body["sender"], 
+            _receiver:req.body["receiver"], 
+            _subject:req.body["subject"], 
+            _content:req.body["content"], 
+            _date:""
+        },
         res
     );
+    ActionLog("NEW_AIRMAIL",req.ip);
 })
 
 router.delete('/', (req, res) => {
@@ -30,6 +36,7 @@ router.delete('/', (req, res) => {
         req.body["id"], 
         res
     );
+    ActionLog("DEL_AIRMAIL",req.ip);
 })
 
 export const MailAPI = router;

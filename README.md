@@ -31,5 +31,5 @@ npm run build
 
 ## Extend
 ---
-You can develop plugins for nodevms using JavaScript, there will be 
+You can develop plugins for nodevms using TypeScript, there will be 
 a chart showing all the API available once the beta release is out.

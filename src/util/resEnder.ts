@@ -1,9 +1,9 @@
-import DATATYPES from '../types/global'
+import IDATATYPES from '../types/global'
 let result = {
     state:true,
     message:""
 }
-export function ResEnd(state:boolean, message:string | any,res:any,args?:DATATYPES.ResEndArgs[]) {
+export function ResEnd(state:boolean, message:string | any,res:any,args?:IDATATYPES.IResEndArgs[]) {
     result.state = state;
     result.message = message;
     if (args) {

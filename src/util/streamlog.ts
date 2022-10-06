@@ -20,4 +20,14 @@ async function WriteLog(message:string) {
     console.log("[STREAMLOG]: " + message);
 }
 
+export async function ActionLog(ActionName:string,IP:string) {
+    logDB.insertOne({
+        _logType:"ActionLog",
+        _Action:ActionName,
+        _ip:IP,
+        _date:date.toLocaleDateString()+" "+date.toLocaleTimeString(),
+    })
+    console.log("[STREAMLOG]: New ActionLog Recorded");
+}
+
 export default WriteLog;

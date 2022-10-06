@@ -1,12 +1,12 @@
-export namespace DATATYPES {
-    export interface USER_REG {
+export namespace IDATATYPES {
+    export interface IUSER_REG {
         _identity:string,
         _pw:string,
         _nickName:string,
         _email:string
     }
 
-    export interface MAIL {
+    export interface IAIRMAIL {
         _sender:string,
         _receiver: string | string[],
         _date:string,
@@ -14,12 +14,12 @@ export namespace DATATYPES {
         _content:string
     }
 
-    export interface ResEndArgs {
+    export interface IResEndArgs {
         key:string,
         property:string
     }
 
-    export interface PIERP {
+    export interface IPIERP {
         _date:string,
         _departure:string,
         _arrival:string,
@@ -42,12 +42,12 @@ export namespace DATATYPES {
         _content:string,
     }
 
-    export interface GOAL {
-        _condition:CONDITION,
+    export interface IGOAL {
+        _condition:ICONDITION,
         _icon_url:string,
     }
 
-    export interface AIRPORT {
+    export interface IAIRPORT {
         _icao:string,
         _iata:string,
         _name:string,
@@ -56,10 +56,10 @@ export namespace DATATYPES {
         _lon:number
     }
 
-    export interface CONDITION {
+    export interface ICONDITION {
         _record_name:string,
         _condition:number | string
     }
 }
 
-export default DATATYPES;
+export default IDATATYPES;
