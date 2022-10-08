@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/NQOvYll79FEsOoQ2nJcoNjEWVL2qiEZ3hpKIuEwT9gQVmpVs0AOn5XwVcls/WPOQ9xZZ0ZsPC0o38RWC+wUhg==",
+  "success": true,
+  "projectFilePath": "/run/media/peercat/DATA/Code/NodeVMS/hook.net/hook.net.csproj",
+  "expectedPackageFiles": [
+    "/home/peercat/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
