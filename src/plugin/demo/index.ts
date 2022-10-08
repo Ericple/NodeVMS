@@ -1,3 +1,2 @@
-import { NODEVMS_PLUGIN_API_AIRMAIL } from '../api/index';
+import { NODEVMS_PLUGIN_API } from '../api/index';
 
-NODEVMS_PLUGIN_API_AIRMAIL.DELETE_AIRMAIL
