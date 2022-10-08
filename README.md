@@ -7,7 +7,7 @@ instructions will be available on github page once
 its beta version was out.
 
 ## installation
----
+
 A full distribution, along with all dependencies will be available
 at Github Release page
 
@@ -30,6 +30,6 @@ npm run build
 - MongoDB Community Server 6.0.2 or higher
 
 ## Extend
----
+
 You can develop plugins for nodevms using TypeScript, there will be 
 a chart showing all the API available once the beta release is out.

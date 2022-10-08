@@ -7,8 +7,12 @@ export function ENV_INSPECT() {
     const ENV = fs.existsSync('/.env');
     const DB_CHECK = MongoClient.connect(MONGODB_DB.CONNECT_STRING);
     if (!ENV) {
-        exit(420);
+        console.log("Error: 420");
+        process.exitCode = 420;
+        //exit(420);
     } else if (!DB_CHECK) {
-        exit(421);
+        console.log("Error: 421");
+        process.exitCode = 421;
+        //exit(421);
     }
 }
