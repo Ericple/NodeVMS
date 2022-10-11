@@ -1,12 +1,8 @@
 //THIS FILE IS NOT YET FINISHED
 //DO NOT REQUIRE ANYTHING FROM HERE
 import { 
-    DATA_ACTIONS, NEW_ACCOUNT, 
-    GET_ACCOUNT, PATCH_ACCOUNT, 
-    DELETE_ACCOUNT, NEW_AIRCRAFT, 
-    GET_AIRCRAFT, PATCH_AIRCRAFT, 
-    DELETE_AIRCRAFT, NEW_PIERP, 
-    DELETE_PIERP, GET_PIERP } from "../../util/dataActions/dataActions";
+    DATA_ACTIONS, NEW_PIERP, 
+    DELETE_PIERP, GET_PIERP } from "../../util/dataActions";
 import { SendSiteMail } from "../../util/sitemail"
 import WriteLog from "../../util/streamlog";
 
@@ -14,7 +10,7 @@ export namespace NODEVMS_PLUGIN_API {
 /**
  * THIS STATEMENT PROVIDES GLOBAL APIs
  */
- export const GLOBAL = {
+export const GLOBAL = {
     LOG: WriteLog
 }
 
@@ -38,10 +34,10 @@ export const SITEMAIL = {
  * THIS STATEMENT PROVIDES ACCOUNT APIs
  */
 export const ACCOUNT = {
-    CREATE: NEW_ACCOUNT,
-    GET: GET_ACCOUNT,
-    PATCH: PATCH_ACCOUNT,
-    DELETE: DELETE_ACCOUNT
+    NEW: DATA_ACTIONS.ACCOUNT.NEW,
+    GET: DATA_ACTIONS.ACCOUNT.GET,
+    PATCH: DATA_ACTIONS.ACCOUNT.PATCH,
+    DELETE: DATA_ACTIONS.ACCOUNT.DELETE
 }
 
 /**
@@ -49,9 +45,9 @@ export const ACCOUNT = {
  */
 export const AIRCRAFT = {
     CREATE: DATA_ACTIONS.AIRCRAFT.NEW,
-    GET: GET_AIRCRAFT,
-    PATCH: PATCH_AIRCRAFT,
-    DELETE: DELETE_AIRCRAFT
+    GET: DATA_ACTIONS.AIRCRAFT.GET,
+    PATCH: DATA_ACTIONS.AIRCRAFT.PATCH,
+    DELETE: DATA_ACTIONS.AIRCRAFT.DELETE
 }
 
 /**

@@ -1,4 +1,5 @@
 ﻿namespace hook.net;
+using hook.net;
 
 public class NodeVMS_Hook {
     private string uri;

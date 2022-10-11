@@ -1,7 +1,7 @@
 //IMPORT STATEMENT
 import express from 'express';
 import WriteLog, { ActionLog } from '../util/streamlog';
-import { DELETE_AIRMAIL, GET_AIRMAIL, NEW_AIRMAIL } from "../util/dataActions/dataActions";
+import { DELETE_AIRMAIL, GET_AIRMAIL, NEW_AIRMAIL } from "../util/dataActions";
 
 //CONSTANT DECLARATION
 const router = express.Router();

@@ -1,10 +1,8 @@
 import { MONGODB_DB } from "../configuration";
 import { MongoClient } from "mongodb";
-import IDATATYPES from "../../types/global";
-import { ResEnd } from "../resEnder";
-import WriteLog from "../streamlog";
 import { AIRMAIL } from "./airmail";
 import { AIRCRAFT } from "./aircraft/aircraft";
+import { ACCOUNT } from "./account";
 
 const date = new Date();
 const MONGO_CONNECT = new MongoClient(MONGODB_DB.CONNECT_STRING);
@@ -14,17 +12,9 @@ const ACCOUNT_DB = MAIN_DB.collection(MONGODB_DB.ACCOUNT);
 const AIRCRAFT_DB = MAIN_DB.collection(MONGODB_DB.AIRCRAFT);
 export const DATA_ACTIONS = {
     AIRMAIL: AIRMAIL,
-    AIRCRAFT: AIRCRAFT
+    AIRCRAFT: AIRCRAFT,
+    ACCOUNT: ACCOUNT
 };
-
-//ACCOUNT ACTION
-export function NEW_ACCOUNT() {}
-
-export function DELETE_ACCOUNT() {}
-
-export function GET_ACCOUNT() {}
-
-export function PATCH_ACCOUNT() {}
 
 
 //PIERP ACTION
