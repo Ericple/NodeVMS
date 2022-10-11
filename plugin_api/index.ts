@@ -1,13 +1,6 @@
 //THIS FILE IS NOT YET FINISHED
 //DO NOT REQUIRE ANYTHING FROM HERE
-import { 
-    NEW_AIRMAIL, GET_AIRMAIL, 
-    DELETE_AIRMAIL, NEW_ACCOUNT, 
-    GET_ACCOUNT, PATCH_ACCOUNT, 
-    DELETE_ACCOUNT, NEW_AIRCRAFT, 
-    GET_AIRCRAFT, PATCH_AIRCRAFT, 
-    DELETE_AIRCRAFT, NEW_PIERP, 
-    DELETE_PIERP, GET_PIERP } from "../src/util/dataActions/dataActions";
+import { DATA_ACTIONS } from "../src/util/dataActions/dataActions"
 import { SendSiteMail } from "../src/util/sitemail"
 import WriteLog from "../src/util/streamlog";
 
@@ -23,9 +16,9 @@ export namespace NODEVMS_PLUGIN_API {
  * THIS STATEMENT PROVIDES AIRMAIL APIs
  */
 export const AIRMAIL = {
-    SEND: NEW_AIRMAIL,
-    GET: GET_AIRMAIL,
-    DELETE: DELETE_AIRMAIL
+    SEND: DATA_ACTIONS.AIRMAIL.NEW_AIRMAIL,
+    GET: DATA_ACTIONS.AIRMAIL.GET_AIRMAIL,
+    DELETE: DATA_ACTIONS.AIRMAIL.DELETE_AIRMAIL
 }
 
 /**

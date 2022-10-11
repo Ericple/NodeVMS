@@ -1,9 +1,27 @@
 export namespace IDATATYPES {
+
     export interface IUSER_REG {
         _identity:string,
         _pw:string,
         _nickName:string,
         _email:string
+    }
+
+    export interface IACCOUNT {
+        _identity : string,
+        _pw : string,
+        _nickName : string,
+        _email : string,
+        _permission : number,
+        _flights : number,
+        _duration : number,
+        _lastLogin : string,
+        _company : string,
+        _wealth : number,
+        _post : string,
+        _active : boolean,
+        _multiLogin : boolean,
+        _activateCode : string
     }
 
     export interface IAIRMAIL {
@@ -25,7 +43,6 @@ export namespace IDATATYPES {
         _arrival:string,
         _duration:string | number,
         _fuel:number,
-        _fuel_price:number,
         _pax: {
             _class_A:number | null
             _class_B:number | null
@@ -59,6 +76,14 @@ export namespace IDATATYPES {
     export interface ICONDITION {
         _record_name:string,
         _condition:number | string
+    }
+
+    export interface IAIRCRAFT {
+        _reg_number:string,
+        _type_code:string,
+        _size_code:string,
+        _belong:string
+        _seat_angle:number
     }
 }
 

@@ -10,7 +10,7 @@ const MAIN_DB = MONGO_CONNECT.db(MONGODB_DB.MAIN);
 const AIRMAIL_DB = MAIN_DB.collection(MONGODB_DB.AIRMAIL);
 
 //AIRMAIL ACTION
-export async function NEW_AIRMAIL(airMail:IDATATYPES.IAIRMAIL, res?:any) {
+export async function NEW(airMail:IDATATYPES.IAIRMAIL, res?:any) {
     airMail._date = date.toLocaleDateString()+" "+date.toLocaleTimeString();
     if (typeof airMail._receiver === 'object') {
         const _receiverCount = airMail._receiver.length
@@ -25,13 +25,11 @@ export async function NEW_AIRMAIL(airMail:IDATATYPES.IAIRMAIL, res?:any) {
                 if(res) {
                     ResEnd(false,reason,res);
                 }
-                console.log("error"+reason);
             })
         }
         if(res) {
             ResEnd(true,"Mail sent",res);
         }
-        WriteLog("Mail Sent");
     } else {
         AIRMAIL_DB.insertOne({
             _sender: airMail._sender,
@@ -48,13 +46,12 @@ export async function NEW_AIRMAIL(airMail:IDATATYPES.IAIRMAIL, res?:any) {
             if(res) {
                 ResEnd(true,"Mail sent",res);
             }
-            console.log("Mail Sent at "+airMail._date);
-            WriteLog("Mail Sent");
+            WriteLog(`Mail Sent at ${airMail._date}`);
         })
     }
 }
 
-export function DELETE_AIRMAIL(id:string | string[], res?:any) {
+export function DELETE(id:string | string[], res?:any) {
     if (typeof id === 'object') {
         for (const objId in id) {
             AIRMAIL_DB.deleteOne({"_objectId": objId});
@@ -66,10 +63,9 @@ export function DELETE_AIRMAIL(id:string | string[], res?:any) {
     if(res) {
         ResEnd(true,"Mail Deleted",res);
     }
-    WriteLog("Mail deleted ["+id+"]");
 }
 
-export function GET_AIRMAIL(identity:string, res:any) {
+export function GET(identity:string, res:any) {
     AIRMAIL_DB.find({$or:[
         {"_sender": identity},
         {"_receiver": identity}
@@ -80,7 +76,7 @@ export function GET_AIRMAIL(identity:string, res:any) {
 }
 
 export const AIRMAIL = {
-    NEW_AIRMAIL,
-    DELETE_AIRMAIL,
-    GET_AIRMAIL
+    NEW,
+    DELETE,
+    GET
 }

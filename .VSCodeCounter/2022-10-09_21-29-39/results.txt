@@ -1,0 +1,117 @@
+Date : 2022-10-09 21:29:39
+Directory : /run/media/peercat/DATA/Code/NodeVMS
+Total : 61 files,  15791 codes, 194 comments, 2521 blanks, all 18506 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| CSS                |          2 |     10,331 |          8 |      2,359 |     12,698 |
+| JSON               |          4 |      4,299 |          0 |          2 |      4,301 |
+| TypeScript         |         25 |        745 |         75 |         98 |        918 |
+| Pug                |         10 |        261 |          9 |         27 |        297 |
+| C#                 |          4 |         35 |         13 |          8 |         56 |
+| XML                |         11 |         32 |          0 |          3 |         35 |
+| JavaScript         |          2 |         32 |          9 |          2 |         43 |
+| Markdown           |          1 |         24 |          0 |         12 |         36 |
+| JSON with Comments |          1 |         22 |         80 |          9 |        111 |
+| Properties         |          1 |         10 |          0 |          1 |         11 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                              | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                 |         61 |     15,791 |        194 |      2,521 |     18,506 |
+| hook.net                                                                                                          |         10 |        206 |         13 |         12 |        231 |
+| hook.net/obj                                                                                                      |          8 |        183 |         11 |          8 |        202 |
+| hook.net/obj/Debug                                                                                                |          4 |         29 |         11 |          8 |         48 |
+| hook.net/obj/Debug/net6.0                                                                                         |          4 |         29 |         11 |          8 |         48 |
+| plugin_api                                                                                                        |          2 |         35 |         20 |          7 |         62 |
+| src                                                                                                               |         34 |     11,077 |         71 |      2,451 |     13,599 |
+| src/api                                                                                                           |          4 |        231 |         13 |         15 |        259 |
+| src/plugin                                                                                                        |          3 |         60 |         20 |         11 |         91 |
+| src/plugin/api                                                                                                    |          1 |         39 |         20 |          7 |         66 |
+| src/plugin/demo                                                                                                   |          1 |          1 |          0 |          2 |          3 |
+| src/plugin/envinspector                                                                                           |          1 |         20 |          0 |          2 |         22 |
+| src/public                                                                                                        |         12 |     10,371 |         17 |      2,361 |     12,749 |
+| src/public/css                                                                                                    |          2 |     10,331 |          8 |      2,359 |     12,698 |
+| src/public/images                                                                                                 |          8 |          8 |          0 |          0 |          8 |
+| src/public/js                                                                                                     |          2 |         32 |          9 |          2 |         43 |
+| src/router                                                                                                        |          2 |         12 |          0 |          6 |         18 |
+| src/types                                                                                                         |          1 |         80 |          0 |         10 |         90 |
+| src/util                                                                                                          |         10 |        279 |         16 |         40 |        335 |
+| src/util/dataActions                                                                                              |          3 |        132 |          4 |         22 |        158 |
+| src/util/dataActions/aircraft                                                                                     |          1 |         29 |          0 |          4 |         33 |
+| src/util/dataActions/airmail                                                                                      |          1 |         75 |          1 |          6 |         82 |
+| views                                                                                                             |         10 |        261 |          9 |         27 |        297 |
+| views/partials                                                                                                    |          6 |        182 |          0 |         16 |        198 |
++-------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                          | language           | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /run/media/peercat/DATA/Code/NodeVMS/README.md                                                                    | Markdown           |         24 |          0 |         12 |         36 |
+| /run/media/peercat/DATA/Code/NodeVMS/copyStaticAssets.ts                                                          | TypeScript         |          4 |          1 |          1 |          6 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/NodeVMS_Hook.cs                                                     | C#                 |         16 |          2 |          1 |         19 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/hook.net.csproj                                                     | XML                |          7 |          0 |          3 |         10 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs     | C#                 |          3 |          1 |          1 |          5 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/Debug/net6.0/hook.net.AssemblyInfo.cs                           | C#                 |          9 |          9 |          5 |         23 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/Debug/net6.0/hook.net.GeneratedMSBuildEditorConfig.editorconfig | Properties         |         10 |          0 |          1 |         11 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/Debug/net6.0/hook.net.GlobalUsings.g.cs                         | C#                 |          7 |          1 |          1 |          9 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/hook.net.csproj.nuget.dgspec.json                               | JSON               |         66 |          0 |          0 |         66 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/hook.net.csproj.nuget.g.props                                   | XML                |         15 |          0 |          0 |         15 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/hook.net.csproj.nuget.g.targets                                 | XML                |          2 |          0 |          0 |          2 |
+| /run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/project.assets.json                                             | JSON               |         71 |          0 |          0 |         71 |
+| /run/media/peercat/DATA/Code/NodeVMS/package-lock.json                                                            | JSON               |      4,105 |          0 |          1 |      4,106 |
+| /run/media/peercat/DATA/Code/NodeVMS/package.json                                                                 | JSON               |         57 |          0 |          1 |         58 |
+| /run/media/peercat/DATA/Code/NodeVMS/plugin_api/index.ts                                                          | TypeScript         |         33 |         20 |          7 |         60 |
+| /run/media/peercat/DATA/Code/NodeVMS/plugin_api/test.ts                                                           | TypeScript         |          2 |          0 |          0 |          2 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/api/airmail.ts                                                           | TypeScript         |         32 |          5 |          5 |         42 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/api/index.ts                                                             | TypeScript         |          9 |          0 |          3 |         12 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/api/user.ts                                                              | TypeScript         |        127 |          3 |          5 |        135 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/api/weather.ts                                                           | TypeScript         |         63 |          5 |          2 |         70 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/app.ts                                                                   | TypeScript         |         34 |          5 |          5 |         44 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/plugin/api/index.ts                                                      | TypeScript         |         39 |         20 |          7 |         66 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/plugin/demo/index.ts                                                     | TypeScript         |          1 |          0 |          2 |          3 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/plugin/envinspector/index.ts                                             | TypeScript         |         20 |          0 |          2 |         22 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/css/bootstrap.min.css                                             | CSS                |     10,308 |          8 |      2,356 |     12,672 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/css/vaptcha.css                                                   | CSS                |         23 |          0 |          3 |         26 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/icon_bilibili.svg                                          | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/icon_dashboard.svg                                         | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/icon_extension.svg                                         | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/icon_function.svg                                          | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/icon_tiktok.svg                                            | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/icon_weibo.svg                                             | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/icon_yes.svg                                               | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/images/nodevms.svg                                                | XML                |          1 |          0 |          0 |          1 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/js/bootstrap.min.js                                               | JavaScript         |          1 |          6 |          0 |          7 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/public/js/weather.js                                                     | JavaScript         |         31 |          3 |          2 |         36 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/router/home.ts                                                           | TypeScript         |          6 |          0 |          3 |          9 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/router/weather.ts                                                        | TypeScript         |          6 |          0 |          3 |          9 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/types/global.ts                                                          | TypeScript         |         80 |          0 |         10 |         90 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/dataActions/aircraft/aircraft.ts                                    | TypeScript         |         29 |          0 |          4 |         33 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/dataActions/airmail/index.ts                                        | TypeScript         |         75 |          1 |          6 |         82 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/dataActions/dataActions.ts                                          | TypeScript         |         28 |          3 |         12 |         43 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/encrypt.ts                                                          | TypeScript         |         15 |          8 |          0 |         23 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/logger.ts                                                           | TypeScript         |         14 |          0 |          5 |         19 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/resEnder.ts                                                         | TypeScript         |         19 |          0 |          0 |         19 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/secrets.ts                                                          | TypeScript         |         32 |          0 |          6 |         38 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/session.ts                                                          | TypeScript         |         18 |          0 |          1 |         19 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/sitemail.ts                                                         | TypeScript         |         23 |          1 |          2 |         26 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/util/streamlog.ts                                                        | TypeScript         |         26 |          3 |          4 |         33 |
+| /run/media/peercat/DATA/Code/NodeVMS/src/www.ts                                                                   | TypeScript         |         10 |          0 |          3 |         13 |
+| /run/media/peercat/DATA/Code/NodeVMS/tsconfig.json                                                                | JSON with Comments |         22 |         80 |          9 |        111 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/contact.pug                                                            | Pug                |         24 |          0 |          3 |         27 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/home.pug                                                               | Pug                |          7 |          0 |          1 |          8 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/layout.pug                                                             | Pug                |         19 |          8 |          5 |         32 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/partials/features.pug                                                  | Pug                |         17 |          0 |          0 |         17 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/partials/flash.pug                                                     | Pug                |         18 |          0 |          1 |         19 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/partials/footer.pug                                                    | Pug                |         16 |          0 |          2 |         18 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/partials/header.pug                                                    | Pug                |         19 |          0 |          1 |         20 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/partials/hero.pug                                                      | Pug                |          9 |          0 |          1 |         10 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/partials/pricing.pug                                                   | Pug                |        103 |          0 |         11 |        114 |
+| /run/media/peercat/DATA/Code/NodeVMS/views/weather.pug                                                            | Pug                |         29 |          1 |          2 |         32 |
+| Total                                                                                                             |                    |     15,791 |        194 |      2,521 |     18,506 |
++-------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

@@ -1,4 +1,5 @@
 import IDATATYPES from '../types/global'
+import WriteLog from './streamlog'
 let result = {
     state:true,
     message:""
@@ -13,5 +14,6 @@ export function ResEnd(state:boolean, message:string | any,res:any,args?:IDATATY
             });
         });
     }
+    WriteLog(message)
     res.send(JSON.stringify(result));
 }
