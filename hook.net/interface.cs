@@ -1,29 +1,11 @@
 namespace hook.net;
 
 public interface IDataTypes {
-    interface IUserInterface {
-        void New();
-        void Get();
-        void Patch();
-        void Delete();
-    }
-    interface IAirmailInterface {
-        void Send();
-        void Get();
-        void Delete();
-    }
-    interface ISiteMailInterface {
-        void Send();
-    }
-    interface IAircraftInterface {
-        void New();
-        void Get();
-        void Patch();
-        void Delete();
-    }
-    interface IPierpInterface {
-        void New();
-        void Delete();
-        void Get();
+    interface IDataActionInterface<T> {
+        void New(T Dataobj);
+        void Get(string identity);
+        void Patch(string identity, T Dataobj);
+        void Delete(string identity);
+        bool Refresh();
     }
 }

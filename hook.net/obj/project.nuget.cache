@@ -1,9 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "/NQOvYll79FEsOoQ2nJcoNjEWVL2qiEZ3hpKIuEwT9gQVmpVs0AOn5XwVcls/WPOQ9xZZ0ZsPC0o38RWC+wUhg==",
+  "dgSpecHash": "A4MM3WgArmmsnn1GUNOVZHMKK7AG4sQKIhaPnIMaKQ2v9P+01NxYVhZ7GMBtf0kLbBI/A4vMpFk73vhPvaTuvg==",
   "success": true,
-  "projectFilePath": "/run/media/peercat/DATA/Code/NodeVMS/hook.net/hook.net.csproj",
+  "projectFilePath": "/home/peercat/Code/NodeVMS/hook.net/hook.net.csproj",
   "expectedPackageFiles": [
+    "/home/peercat/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
+    "/home/peercat/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/home/peercat/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/home/peercat/.nuget/packages/mongodb.bson/2.17.1/mongodb.bson.2.17.1.nupkg.sha512",
+    "/home/peercat/.nuget/packages/mongodb.driver/2.17.1/mongodb.driver.2.17.1.nupkg.sha512",
+    "/home/peercat/.nuget/packages/mongodb.driver.core/2.17.1/mongodb.driver.core.2.17.1.nupkg.sha512",
+    "/home/peercat/.nuget/packages/mongodb.libmongocrypt/1.5.5/mongodb.libmongocrypt.1.5.5.nupkg.sha512",
+    "/home/peercat/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
+    "/home/peercat/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/home/peercat/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/home/peercat/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/home/peercat/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/home/peercat/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
   ],
   "logs": []

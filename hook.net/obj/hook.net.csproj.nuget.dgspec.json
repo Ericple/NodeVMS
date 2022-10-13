@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/run/media/peercat/DATA/Code/NodeVMS/hook.net/hook.net.csproj": {}
+    "/home/peercat/Code/NodeVMS/hook.net/hook.net.csproj": {}
   },
   "projects": {
-    "/run/media/peercat/DATA/Code/NodeVMS/hook.net/hook.net.csproj": {
+    "/home/peercat/Code/NodeVMS/hook.net/hook.net.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/peercat/DATA/Code/NodeVMS/hook.net/hook.net.csproj",
+        "projectUniqueName": "/home/peercat/Code/NodeVMS/hook.net/hook.net.csproj",
         "projectName": "hook.net",
-        "projectPath": "/run/media/peercat/DATA/Code/NodeVMS/hook.net/hook.net.csproj",
+        "projectPath": "/home/peercat/Code/NodeVMS/hook.net/hook.net.csproj",
         "packagesPath": "/home/peercat/.nuget/packages/",
-        "outputPath": "/run/media/peercat/DATA/Code/NodeVMS/hook.net/obj/",
+        "outputPath": "/home/peercat/Code/NodeVMS/hook.net/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/peercat/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.17.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -34,6 +34,7 @@
     "@types/nodemailer": "^6.4.6",
     "@types/shelljs": "^0.8.11",
     "bootstrap-icons": "^1.9.1",
+    "chart.js": "^3.9.1",
     "compression": "^1.7.4",
     "connect-mongo": "^4.6.0",
     "crypto": "^1.0.1",
